@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+ <html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="description" content="James Watkins">
+        <meta name="author" content="James Watkins">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>James Watkins</title>
+
+		<link rel="icon" href="icon_path" type="image/icon type">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+
+        <style type="text/css">
+
+
+            body {
+                padding-top: 70px;
+                font-family: Helvetica; 
+            }
+
+                
+            .navbar-brand {
+                font-weight: bold;
+            }
+
+            #signup {
+                text-decoration: none;    
+            }
+
+
+            /*.nav-item:hover {
+                text-decoration: underline;
+            }*/
+
+
+
+            #nav-hover :hover {
+                color: #F4C10C;
+                -webkit-transform: scale(1.1);
+            }
+
+
+            @media(min-width:  768px) {
+                .news-input {
+                    width: 50%; 
+                }   
+            }
+
+            .wrapper {              
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+            .headtext {
+                width: 24ch;
+                animation: typing 2s steps(22), blink .5s step-end;
+                white-space: nowrap;
+                overflow: hidden;
+                font-family: monospace;
+                font-size: 2em;
+            }
+
+
+            #headcopy {
+                opacity: 0;
+                animation: fadein 1s ease-in 3s forwards;
+            }
+            
+            
+            #headcopy2 {
+                opacity: 0;
+                animation: fadein 2s ease-in  4s forwards;
+            }
+
+
+            @keyframes typing {
+                from {
+                    width: 0
+                }
+            }
+        
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+            }
+
+
+            @keyframes fadein {
+                from {
+                    opacity: 0
+                }
+                to {
+                    opacity: 1
+                }
+            }
+
+
+            .image1 {
+                animation: fadein 4s backwards;
+                animation-delay: 3s;
+            }
+              
+            #img-animation {
+                transition: transform 1s;
+            }
+
+            #img-animation:hover {
+                -webkit-transform: scale(1.2);
+            }
+
+
+            #about1 :hover {
+                background-color: #212429;
+                color: #F8F9FA;
+                transition: 1s;
+            }
+
+            #about2 :hover {
+                background-color: #212429;
+                color: #F8F9FA;
+                transition: background-color 1s;
+            }
+
+            #about3 :hover {
+                background-color: #212429;
+                color: #F8F9FA;
+                transition: background-color 1s;
+            }
+
+
+            #icon1{
+                color: white;
+            }
+
+
+            #icon1:hover{
+                color: #F4C10C;
+            }
+
+            .fade-in {
+                opacity: 0.1;
+                transition: opacity 1s ease-in;
+            }
+
+            .fade-in.appear {
+                opacity: 1;
+            }
+
+
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+<!-- Nav -->
+
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark fixed-top">
+
+            <div class="container">
+
+
+               <!-- <a class="navbar-brand">James Watkins Portfolio</a> -->
+
+
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    
+                    <span class="navbar-toggler-icon"></span>                   
+                
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    
+                    <ul class="nav navbar-nav mx-auto">
+
+                        <li id="nav-hover" class="nav-item mx-auto">
+
+                            <a class="nav-link mx-2" href="#">Home</a>
+
+                        </li>
+
+                        <li id="nav-hover" class="nav-item mx-auto">
+
+                            <a class="nav-link mx-2" href="#about">About me</a>
+
+                        </li>
+
+                        <li id="nav-hover" class="nav-item mx-auto">
+
+                            <a class="nav-link mx-2" href="#cv">CV</a>
+
+                        </li>
+
+                        <li id="nav-hover" class="nav-item mx-auto">
+
+                            <a class="nav-link mx-2" href="#projects">Projects</a>
+
+                        </li>
+
+                        <li id="nav-hover" class="nav-item mx-auto">
+
+                            <a href="#contact" class="nav-link mx-2">Contact</a>
+
+                        </li>                       
+
+                    </ul>
+
+                </div>
+            
+            </div>
+
+        </nav>
+
+<!-- Nav -->
+
+
+<!-- Head -->
+
+        <section id="explore header fade-in" class="bg-warning text-dark text-center py-5">
+            
+            <div class="container">
+
+                <div class="align-items-center justify-content-between">
+                    
+                    <div>
+
+                        <div class="wrapper">
+
+                        <h1 id="hedtext1" class="headtext mb-5">Hello, my name is James.</h1>
+
+                    </div>
+
+                        <img id="img-animation" style="border-radius: 50%" class="image1 w-25 mx-auto pt-2 d-none d-md-block mb-5" src="Images/james1.jpg" alt="Handsome man">
+
+                        <p id="headcopy" class="lead">I am an aspiring front-end developer,<span id ="headcopy2"> and this is a little portfolio to showcase myself.</span></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </section>
+
+
+<!-- Head -->
+
+
+<!-- About me -->
+
+        <section id="about" class="p-5 bg-light text-dark fade-in fade-out">
+
+            <div class="container">
+                
+                <div class="row g-4 align-items-center justify-content-between">
+
+                    <h2 class="fw-bold py-5">About me</h2>
+
+                        <div class="col-md-6">
+                            
+                            <div id="about1" class="card bg-light text-dark border-0">
+                            
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                    
+                                    I currently work as a Help Desk Team Lead, responsible for a small team overseeing customer service within our company.</p>
+
+                                    <p>Often working closely with our development team in the diagnosis of bug fixes, I know how valuable and time-restrictive this can be, and to also work within SLAs.
+                                    
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>                    
+                        
+                        <div class="col-md-6">
+                            
+                            <div id="about2" class="card bg-light text-dark border-0">
+                            
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                    
+                                    The reason for wanting to switch my career is simple.<strong> I enjoy writing code.</strong></p>
+
+                                    <p>The constant learning, sense of fulfilment and collaborative nature makes it a career that I amm willing to fight for. What I may lack in professional experience, I make up for in my determination to succeed.
+                                    
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div> 
+
+                <div class="row align-items-center justify-content-between">
+
+                        <div class="col-md-6 py-5">
+                            
+                            <div id="about3" class="card bg-light text-dark border-0">
+                            
+                                <div class="card-body">
+
+                                    <h4 class="fw-bold">Outside of work</h4>
+
+                                    <p class="card-text">
+
+                                    <p>       
+                                    Away from work, I am a keen musician. I play several instruments, including:
+
+                                    <ul>
+                                        <li>Guitar</li>
+                                        <li>Bass</li>
+                                        <li>Drums</li>
+                                        <li>Piano</li>
+                                        <li>Trumpet</li>
+                                        <li>Clarinet</li>
+                                        <li>Vocals</li>
+                                    </ul>
+                                    </p>
+
+                                    <p>I have been in numerous rock bands throughout the years, recording and releasing a few pieces of music (see the video for a taste!). Although I no longer play live, I am now more focused on the production side as a mix engineer in my spare time. </p>
+
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 px-5">
+                        
+                                 <iframe width="100%" height="300" src="https://www.youtube.com/embed/0CaHS3oQIAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>  
+
+
+<!-- About me -->
+
+
+<!-- CV -->          
+
+        <section id="cv" class="up p-5 bg-warning fade-in fade-out">
+            
+            <div class="container">
+                
+                <div class="row g-4">
+
+                    <div class="col-md">
+
+                        <h2 class="py-5 fw-bold ">CV</h2>
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            
+                                <div class="accordion-item">
+                                                                           
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4 class="accordion-header" id="flush-headingOne">Help Desk Team Lead </h4>
+                                    </button>
+                                  
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    
+                                        <div class="accordion-body">
+
+                                            <p><em><sub>Adgistics, Apr 2021 - Present</sub></em></p>
+
+                                            <p class="lead">Responsibilities:</p>
+                                
+                                                <ul>
+
+                                                <li>Oversee the team on a day to day basis</li>
+                                                <li>Assigning and delegating work set from Account Managers as well as helpdesk tickets</li>
+                                                <li>Liaising with Account Managers to keep up to date with current work and changing processes</li>
+                                                <li>Dealing with escalated issues and assigning to appropriate departments of the business</li>
+
+                                                </ul> 
+                                            
+                                        </div>
+                                    
+                                    </div>
+                            
+                                </div>
+                                
+
+                                <div class="accordion-item">
+                                    
+                                  
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><h4 class="accordion-header" id="flush-headingTwo">Deputy Head of Professional Services</h4>
+                                        </button>
+                                
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  
+                                        <div class="accordion-body">
+
+                                            <p><em><sub>Adgistics, Jul 2017 - Apr 2021</sub></em></p>
+                                        
+                                            <p class="lead">Responsibilities:</p>
+                                
+                                                <ul>
+
+                                                    <li>Oversee the team on a day to day basis in the absence of my manager</li>
+                                                    <li>Assigning and delegating work set from Account Managers as well as helpdesk tickets</li>
+                                                    <li>Liaising with Account Managers to keep up to date with current work and changing processes</li>
+                                                    <li>Dealing with escalated issues and assigning to appropriate departments of the business</li>
+
+                                                </ul> 
+
+                                        </div>
+                                
+                                    </div>
+                              
+                                </div>
+  
+
+                                <div class="accordion-item">
+
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><h4 class="accordion-header" id="flush-headingThree">Account Manager</h4>
+                                    </button>
+
+                                
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                  
+                                        <div class="accordion-body">
+
+                                            <p><em><sub>Adgistics, Apr 2017 - Jul 2017</sub></em></p>
+
+                                            <p class="lead">Responsibilities:</p>
+                                            
+                                            <ul>
+
+                                                <li>Update clients with the status of ongoing project, either by email or over the phone</li>
+                                                <li>Create sales orders for new projects and existing enhancements</li>
+                                                <li>Troubleshoot user issues and brand site problems, escalating where necessary</li>
+                                                <li>Weekly update calls with any concerns or matters that either myself or the client would like to raise</li>
+
+                                            </ul>                                            
+
+                                        </div>
+                                
+                                    </div>
+                              
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><h4 class="accordion-header" id="flush-headingFour">Professional Services Executive</h4>
+                                    </button>
+
+                                
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                  
+                                        <div class="accordion-body">
+
+                                            <p><em><sub>Adgistics, May 2015 - Apr 2017</sub></em></p>
+
+                                            <p class="lead">Responsibilities:</p>
+                                            
+                                            <ul>
+
+                                                <li>Pick up tickets from the backlog and resolve issues in a timely manner</li>
+                                                <li>Taking inbound and making outbound calls to users regarding technical issues</li>
+                                                <li>Manage my own workload and prioritise the most important tickets</li>
+                                                <li>Answering helpdesk calls and using my initiative and problem solving skills to sort issues for customers.</li>
+                                                <li>Completing brand site management tasks for account managers, including uploading and removing content, building guideline pages and constructing user data reports.</li>
+
+                                            </ul>                                           
+
+                                        </div>
+                                
+                                    </div>
+                              
+                                </div>            
+                        
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </section>
+
+
+<!-- CV -->
+
+
+<!-- Projects -->
+
+        <section id="projects" class="p-5 bg-dark fade-in fade-out">
+            
+            <div class="container">
+
+                <h2 class="py-5 fw-bold text-light">Projects</h2>
+
+                <div class="row text-center g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-link-45deg"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>                  
+
+                        
+                    <div class="col-md-4">
+                            
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+                            
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+                            
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+                            
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>                                                                            
+                    
+                    <div class="col-md-4">
+                            
+                        <div class="card bg-light text-dark">
+                            
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+                                
+                                <h3 class="card-title mb-3">
+                                    
+                                MixHub
+
+                                </h3>
+
+                                <p class="card-text">
+                                    
+                                MixHub is a concept that encourages collaborative working between music industry professionals.
+                                    
+                                </p>
+
+                                <a href="https://jwatkins92.github.io/" target="_blank" class="btn btn-dark text-light">View here</a>
+
+                            </div>
+
+                        </div>
+
+                    </div> 
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Projects -->
+
+
+<!-- Contact -->
+
+        <section id="contact" class="p-5 bg-warning fade-in fade-out">
+        	
+        	<div class="container">
+        		
+        		<div class="row g-4">
+
+                    <div" class="align-items-center card text-light bg-dark">
+                            
+                        <div class="card-body text-center">
+                                
+                            <h3 class="card-title m-3">Contact</h3>
+
+                            <p>If you wish to contact me regarding any vacancies, please contact me through the icon below.</p>
+
+                            <div class="h1">
+                                    
+                                <a href = "mailto: james_ian_watkins@outlook.com"><i id="icon1" class="bi bi-envelope "></i></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        			
+        		</div>
+
+        	</div>
+
+        </section>
+
+<!-- Contact -->
+
+
+<!-- Footer -->
+
+        <footer class="py-3 bg-dark text-light text-center position-relative">
+        	
+        	<div class="container">
+        		
+        		<p class="lead fw-bold"><sub>James Watkins 2021</sub></p>
+
+        		<a href="#" class="bi bi-house h2 text-light m-4"></a>
+                <a href="https://www.facebook.com/JamesWatkinsMusic/" target="_blank" class="bi bi-facebook h2 text-light m-4"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram h2 text-light m-4"></a>
+                <a href="https://www.linkedin.com/in/james-watkins-266262109/" target="_blank" class="bi bi-linkedin h2 text-light m-4"></a>
+
+        	</div>
+
+        </footer>
+
+<!-- Footer -->
+	
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <script>
+            
+            $(".navbar-collapse a").click(function () {
+                $(".navbar-collapse").collapse("hide");
+            });
+
+            
+            const faders = document.querySelectorAll('.fade-in');
+
+            const appearOptions = {
+                threshold: 0.4,
+
+            };
+
+            const appearOnScroll = new IntersectionObserver
+            (function(
+                entries,
+                appearOnScroll
+            ) {
+                entries.forEach(entry => {
+                    if(!entry.isIntersecting) {
+                        return;
+                    }   else {
+                        entry.target.classList.add('appear');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                })
+            },
+            appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            })
+
+        
+        </script>
+
+    </body>
+
+ </html>
